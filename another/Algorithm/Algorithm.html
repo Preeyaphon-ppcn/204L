@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Skills</title>
+    <link rel="stylesheet" href="Algorithm.css" />
+  </head>
+  <body>
+    <!-- ข้อ3 -->
+    <div class="container">
+      <h2>3.1 Program web</h2>
+      <button class="btn" onclick="changeBackground()">
+        Change Background
+      </button>
+      <button class="btn" id="messageBtn">Show Message</button>
+      <p id="message"></p>
+
+      <input type="text" id="hoverInput" />
+      <p id="hoverMessage"></p>
+
+      <form onsubmit="return validateForm()">
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+        <button type="submit">Submit</button>
+        <p id="error" class="error"></p>
+      </form>
+    </div>
+
+    <!-- ข้อ4 -->
+    <div class="container">
+      <h2>4.1 Circle Area Calculator</h2>
+      <label for="radius">Enter radius:</label>
+      <input type="number" id="radius" placeholder="Enter radius" />
+      <button onclick="calculateArea()">Calculate</button>
+      <p id="result-circle"></p>
+    </div>
+
+    <div class="container">
+      <h2>4.2 Age and Number Checker</h2>
+      <label for="inputValue">Enter a number:</label>
+      <input type="number" id="inputValue" placeholder="Enter a number" />
+      <button onclick="checkAge()">Check Age</button>
+      <button onclick="checkEvenOdd()">Check Even/Odd</button>
+      <p id="result-age"></p>
+    </div>
+
+    <div class="container">
+      <h2>4.3 For Loop</h2>
+      <input type="number" id="numberInput" placeholder="กรอกตัวเลข (1-10)" />
+      <button onclick="showNumbers()">แสดง</button>
+      <div id="numbers"></div>
+
+      <h2>While Loop (รับค่าจากผู้ใช้)</h2>
+      <input type="text" id="userInput" placeholder="พิมพ์ข้อความ..." />
+      <button onclick="checkInput()">ส่ง</button>
+      <div id="output"></div>
+    </div>
+
+    <div class="container">
+      <h2>4.4 Sorting Algorithm (Bubble Sort)</h2>
+
+      <button onclick="generateArray()">สร้าง Array</button>
+      <button onclick="bubbleSort()">Bubble Sort</button>
+
+      <h3>Original Array</h3>
+      <div id="originalArray"></div>
+
+      <h3>Sorted Array</h3>
+      <div id="sortedArray"></div>
+    </div>
+
+    <div class="container">
+      <h2>4.5 Factorial Calculator</h2>
+      <input type="number" id="factorialInput" placeholder="กรอกตัวเลข" />
+      <button onclick="calculateFactorial()">คำนวณ</button>
+      <p>ผลลัพธ์ Factorial: <span id="factorialResult"></span></p>
+
+      <h2>Fibonacci Sequence</h2>
+      <input type="number" id="fibonacciInput" placeholder="กรอกตัวเลข n" />
+      <button onclick="calculateFibonacci()">แสดงลำดับ</button>
+      <p>ผลลัพธ์ Fibonacci: <span id="fibonacciResult"></span></p>
+    </div>
+
+    <script src="Algorithm.js"></script>
+  </body>
+</html>
